@@ -4,8 +4,9 @@
     "license": "Apache",
     "scripts": {
         "ng": "ng",
-        "start-ui": "ng serve --ec true",
-        "start-dev": "./node_modules/.bin/nodemon --watch server server.js",
+        "start":"node server.js",
+        "start:ui": "ng serve --proxy-config ./config/proxy.conf.js",
+        "start:api": "./node_modules/.bin/nodemon --watch api server.js",
         "build": "ng build --prod",
         "test": "ng test",
         "lint": "ng lint",
