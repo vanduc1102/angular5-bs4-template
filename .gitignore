@@ -56,5 +56,8 @@ typings/
 
 # dotenv environment variables file
 .env
-
+# I dont like yarn
 yarn.lock
+
+# Angular build folder
+dist/
